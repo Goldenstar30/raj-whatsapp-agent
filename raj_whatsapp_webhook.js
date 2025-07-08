@@ -5,6 +5,9 @@ const twilio = require('twilio');
 const cors = require('cors');
 const admin = require('firebase-admin');
 require('dotenv').config();
+console.log('🔍 FIREBASE_SERVICE_ACCOUNT (start):', process.env.FIREBASE_SERVICE_ACCOUNT?.slice(0,50));
+console.log('🔍 FIREBASE_SERVICE_ACCOUNT (end):', process.env.FIREBASE_SERVICE_ACCOUNT?.slice(-50));
+
 
 const app = express();
 const PORT = process.env.PORT || 3000;
